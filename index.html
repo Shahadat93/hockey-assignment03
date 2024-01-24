@@ -1,370 +1,442 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Club BD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Club BD</title>
 
-    <!-- tailwind & daisyui  -->
+  <!-- tailwind & daisyui  -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font awesome  -->
-    <script src="https://kit.fontawesome.com/7cde9f3e9b.js" crossorigin="anonymous"></script>
-    <!--Manrope font add -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/7cde9f3e9b.js" crossorigin="anonymous"></script>
+  <!--Manrope font add -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
+
 <body class="font-manrope">
-    <header>
-        <div class="w-4/5 m-auto lg:relative">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img class="rounded-lg lg:rounded-3xl" src="images/stick.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img class="rounded-lg lg:rounded-3xl" src="images/field.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-            </div>
-            <div class="p-8 bg-[#131318] rounded-2xl lg:absolute lg:w-2/6 lg:bottom-8 lg:right-8">
-                <h3 class="text-xl lg:text-2xl font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
-                <p class="font-medium text-[#FFFFFF7F]">We pride ourselves on being a friendly, inclusive club offering hockey for all.</p>
-            </div>
+  <header>
+    <!-- navbar menu -->
+    <div class="navbar w-10/12 lg:w-4/5 mx-auto my-10">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
-    </header>
-    <main class="w-4/5 m-auto">
-        <!-- Professional Section  -->
-        <section class="mt-10 lg:mt-20">
-            <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
-                <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Professional Hockeys Club</h1>
-                <p class="text-[#13131899] lg:px-60">Our internationally experienced coaches enable everyone at the club to fulfil their potential at every age group, from juniors starting the game to veterans who are grateful to finish a match.</p>
-            </div>
-            <div class="w-11/12 m-auto">
-                <div class="text-center lg:flex gap-2">
-                    <div class="card lg:w-1/4 bg-base-100">
-                        <div class="radial-progress text-red-600 m-auto my-3" style="--value:85;" role="progressbar">85%</div>
-                        <div class="card-body text-center">
-                          <h2 class="card-title m-auto">Prayer Facility</h2>
-                          <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
-                        </div>
-                      </div>
-                    <div class="card lg:w-1/4 bg-base-100">
-                        <div class="radial-progress text-green-600 m-auto my-3" style="--value:95;" role="progressbar">95%</div>
-                        <div class="card-body text-center">
-                          <h2 class="card-title m-auto">Experienced Coach</h2>
-                          <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
-                        </div>
-                      </div>
-                    <div class="card lg:w-1/4 bg-base-100">
-                        <div class="radial-progress text-yellow-500 m-auto my-3" style="--value:90;" role="progressbar">90%</div>
-                        <div class="card-body text-center">
-                          <h2 class="card-title m-auto">Senior Player</h2>
-                          <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
-                        </div>
-                      </div>
-                    <div class="card lg:w-1/4 bg-base-100">
-                        <div class="radial-progress text-blue-600 m-auto my-3" style="--value:80;" role="progressbar">80%</div>
-                        <div class="card-body text-center">
-                          <h2 class="card-title m-auto">Training Ground</h2>
-                          <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </section>
-        <!-- Professional Section end -->
+        <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-8 font-medium">
+          <li><a class="text-[#FF4240]">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-ghost hidden lg:inline">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+        <button class=""><a class="btn btn-error font-bold lg:text-xl text-white px-6">Get Ticket</a></button>
+      </div>
+    </div>
+    <!-- navbar menu end -->
 
-        <!-- Program Sections  -->
-        <section class="mt-10 lg:mt-20 mb-10">
-            <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
-                <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Program Sections</h1>
-                <p class="text-[#13131899] lg:px-60">We have a thriving social community with socials for all ages. Events include our annual Dinner Dance, Oktoberfest and party.</p>
+    <div class="w-4/5 m-auto lg:relative">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img class="rounded-lg lg:rounded-3xl" src="images/stick.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img class="rounded-lg lg:rounded-3xl" src="images/field.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-8 bg-[#131318] rounded-2xl lg:absolute lg:w-2/6 lg:bottom-8 lg:right-8">
+        <h3 class="text-xl lg:text-2xl font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
+        <p class="font-medium text-[#FFFFFF7F]">We pride ourselves on being a friendly, inclusive club offering hockey
+          for all.</p>
+      </div>
+    </div>
+  </header>
+  <main class="w-4/5 m-auto">
+    <!-- Professional Section  -->
+    <section class="mt-10 lg:mt-20">
+      <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
+        <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Professional Hockeys Club</h1>
+        <p class="text-[#13131899] lg:px-60">Our internationally experienced coaches enable everyone at the club to
+          fulfil their potential at every age group, from juniors starting the game to veterans who are grateful to
+          finish a match.</p>
+      </div>
+      <div class="w-11/12 m-auto">
+        <div class="text-center lg:flex gap-2">
+          <div class="card lg:w-1/4 bg-base-100">
+            <div class="radial-progress text-red-600 m-auto my-3" style="--value:85;" role="progressbar">85%</div>
+            <div class="card-body text-center">
+              <h2 class="card-title m-auto">Prayer Facility</h2>
+              <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
+            </div>
+          </div>
+          <div class="card lg:w-1/4 bg-base-100">
+            <div class="radial-progress text-green-600 m-auto my-3" style="--value:95;" role="progressbar">95%</div>
+            <div class="card-body text-center">
+              <h2 class="card-title m-auto">Experienced Coach</h2>
+              <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
+            </div>
+          </div>
+          <div class="card lg:w-1/4 bg-base-100">
+            <div class="radial-progress text-yellow-500 m-auto my-3" style="--value:90;" role="progressbar">90%</div>
+            <div class="card-body text-center">
+              <h2 class="card-title m-auto">Senior Player</h2>
+              <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
+            </div>
+          </div>
+          <div class="card lg:w-1/4 bg-base-100">
+            <div class="radial-progress text-blue-600 m-auto my-3" style="--value:80;" role="progressbar">80%</div>
+            <div class="card-body text-center">
+              <h2 class="card-title m-auto">Training Ground</h2>
+              <p>Our club has superb facilities; two flood-lit, sand-dressed international standard pitches.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Professional Section end -->
+
+    <!-- Program Sections  -->
+    <section class="mt-10 lg:mt-20 mb-10">
+      <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
+        <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Program Sections</h1>
+        <p class="text-[#13131899] lg:px-60">We have a thriving social community with socials for all ages. Events
+          include our annual Dinner Dance, Oktoberfest and party.</p>
+      </div>
+      <div>
+        <div class="sm:flex-row lg:flex lg:gap-6 mb-6">
+          <div class="w-auto mb-6 lg:mb-0">
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure><img class="w-full" src="images/2.png" alt="Shoes" /></figure>
+              <div class="card-body lg:my-auto lg:mx-8">
+                <h2 class="card-title font-medium text-2xl">Junior Program</h2>
+                <p class="flex-none mb-4">The Junior section provides a welcoming and social place to learn, have fun,
+                  make friends, and enjoy membership.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-error text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto">
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+              <figure><img class="w-full" src="images/3.png" alt="Shoes" /></figure>
+              <div class="card-body lg:my-auto lg:mx-8">
+                <h2 class="card-title font-medium text-2xl">Teenager Program</h2>
+                <p class="flex-none mb-4">The Teenager section provides a welcoming and social place to learn, have fun,
+                  make friends, and enjoy membership.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-error text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-auto">
+          <div class="card w-full bg-base-100 shadow-xl image-full">
+            <figure><img class="w-full" src="images/4.png" alt="Shoes" /></figure>
+            <div class="card-body lg:my-auto lg:mx-8">
+              <h2 class="card-title font-medium text-2xl">Professional Program</h2>
+              <p class="flex-none lg:w-1/2 mb-4">The section has a three tier Vets Hockey structure which offers weekly
+                competitive games. After match socials are a big part of playing hockey whichever team you play for...
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-error text-white">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program Sections end -->
+
+    <!-- Product Section  -->
+    <section class="mt-10 lg:mt-20 mb-10">
+      <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
+        <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Our New Products</h1>
+        <p class="text-[#13131899] lg:px-60">Our club are proud to wear Purple, and bar a wartime shortage of purple
+          fabric, have done so for over 100 years! Our club kit is made by Adidas.</p>
+      </div>
+      <div>
+
+      </div>
+    </section>
+    <!-- Product Section End -->
+    <!-- FAQ Section  -->
+    <section class="mt-10 lg:mt-20 mb-10">
+      <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
+        <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Clients Question</h1>
+        <p class="text-[#13131899] lg:px-60">Any questions? We've got it covered! Please see our frequently asked
+          questions below.</p>
+      </div>
+      <div class="lg:flex lg:gap-8 p-8 border border-[#1313181a] rounded-2xl">
+        <div class="w-full">
+          <img src="images/11.png" alt="">
+        </div>
+        <div>
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              Is this club just for elite players?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>No! Players of all ages, abilities and experience are welcome here. Whether you’re a beginner, a social
+                player or an aspiring international, there is a team for you at the club (and a warm off-pitch welcome
+                for social members and Colts parents!). We have 20 adult teams and 50 junior teams – there is something
+                for everyone and we’d love to see you at the club.</p>
+            </div>
+          </div>
+          <hr class="lg:mx-8">
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              I've never played hockey before. Is it possible to try out before I decide whether to join?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>Absolutely. Our Back 2 Hockey programme is the perfect way to give hockey a try before you decide
+                whether you’d like to join a senior team. Find out more information here or email us for more details.
+              </p>
+            </div>
+          </div>
+          <hr class="lg:mx-8">
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              Do you Provide Goalkeeper coaching?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>Goalkeepers have access to specialist GK sessions during the season.</p>
+            </div>
+          </div>
+          <hr class="lg:mx-8">
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              When are trials?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>The club’s annual Play Day is held in early September every year. This is the best way to meet people
+                and find the team that suits you best. Keep an eye out for details on the club website and social media
+                feeds.</p>
+            </div>
+          </div>
+          <hr class="lg:mx-8">
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              Who are the coaches?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>We have a huge team of experienced and inspirational coaches at Surbiton HC, including qualified
+                coaches and current international players.</p>
+            </div>
+          </div>
+          <hr class="lg:mx-8">
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-bold lg:px-8">
+              When is the hockey season?
+            </div>
+            <div class="collapse-content lg:px-8">
+              <p>The senior hockey season runs from September through until March/April. For adult players, there is
+                also various informal summer hockey available during the off season, including a 7-aside summer league.
+              </p>
+
+              <p>
+                The junior season runs from September until March, with some breaks during school holidays. We also
+                provide a Summer Programme for juniors (which is open to non-members).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- get in touch section  -->
+    <section class="mt-10 lg:mt-20 mb-10">
+      <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
+        <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Get In Touch</h1>
+        <p class="text-[#13131899] lg:px-60">Being a member at Hockey Club BD is about more than just chasing a hockey
+          ball around on a Saturday afternoon. Join us and whether you’re a future Olympian, a competitive club player
+          or more interested in a social post-game beer, we guarantee you’ll have a great time both on and off the
+          pitch..</p>
+      </div>
+      <div class="lg:flex gap-6">
+        <div class="w-full max-w-lg p-8 border border-[#1313181a] rounded-2xl">
+          <div class="card w-full bg-[#bced6d1a] text-primary-content">
+            <div class="card-body">
+              <img class="w-12 mb-6" src="images/Group Call.png" alt="">
+              <p class="text-[#13131866]">Phone Number : </p>
+              <h2 class="card-title text-[#131318]">(+62) 123-321-543</h2>
+            </div>
+          </div>
+          <div class="card w-full my-6 bg-[#fddd5f1a] text-primary-content">
+            <div class="card-body">
+              <img class="w-12 mb-6" src="images/Group Msg.png" alt="">
+              <p class="text-[#13131866]">Email : </p>
+              <h2 class="card-title text-[#131318]">hockeys@support.com</h2>
+            </div>
+          </div>
+          <div class="card w-full bg-[#629cf31a] text-primary-content">
+            <div class="card-body">
+              <img class="w-12 mb-6" src="images/Group Map.png" alt="">
+              <p class="text-[#13131866]">Location : </p>
+              <h2 class="card-title text-[#131318]">152/1 Mohakhali Wireless Gate</h2>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <form action="">
+            <div class="lg:flex gap-7">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Your Name</span>
+                </div>
+                <input type="text" placeholder="Enter your full name"
+                  class="input input-bordered w-full bg-[#13131808]" />
+                <div class="label">
+                </div>
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Your Email</span>
+                </div>
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full bg-[#13131808]" />
+                <div class="label">
+                </div>
+              </label>
+            </div>
+            <div class="lg:flex gap-7">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Subject</span>
+                </div>
+                <input type="text" placeholder="Enter your subject"
+                  class="input input-bordered w-full bg-[#13131808]" />
+                <div class="label">
+                </div>
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Phone Number</span>
+                </div>
+                <input type="tel" placeholder="Enter your phone number"
+                  class="input input-bordered w-full bg-[#13131808]" />
+                <div class="label">
+                </div>
+              </label>
             </div>
             <div>
-              <div class="sm:flex-row lg:flex lg:gap-6 mb-6">
-                <div class="w-auto mb-6 lg:mb-0">
-                  <div class="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img class="w-full" src="images/2.png" alt="Shoes" /></figure>
-                    <div class="card-body lg:my-auto lg:mx-8">
-                      <h2 class="card-title font-medium text-2xl">Junior Program</h2>
-                      <p class="flex-none mb-4">The Junior section provides a welcoming and social place to learn, have fun, make friends, and enjoy membership.</p>
-                      <div class="card-actions justify-start">
-                        <button class="btn btn-error text-white">Register Now!</button>
-                      </div>
-                    </div>
-                  </div>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Message</span>
                 </div>
-                <div class="w-auto">
-                  <div class="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img class="w-full" src="images/3.png" alt="Shoes" /></figure>
-                    <div class="card-body lg:my-auto lg:mx-8">
-                      <h2 class="card-title font-medium text-2xl">Teenager Program</h2>
-                      <p class="flex-none mb-4">The Teenager section provides a welcoming and social place to learn, have fun, make friends, and enjoy membership.</p>
-                      <div class="card-actions justify-start">
-                        <button class="btn btn-error text-white">Register Now!</button>
-                      </div>
-                    </div>
-                  </div>
+                <textarea class="textarea textarea-bordered h-48 lg:h-96 w-full bg-[#13131808]"
+                  placeholder="Write your message"></textarea>
+                <div class="label">
                 </div>
-                
-              </div>
-              <div class="w-auto">
-                <div class="card w-full bg-base-100 shadow-xl image-full">
-                  <figure><img class="w-full" src="images/4.png" alt="Shoes" /></figure>
-                  <div class="card-body lg:my-auto lg:mx-8">
-                    <h2 class="card-title font-medium text-2xl">Professional Program</h2>
-                    <p class="flex-none lg:w-1/2 mb-4">The section has a three tier Vets Hockey structure which offers weekly competitive games. After match socials are a big part of playing hockey whichever team you play for...</p>
-                    <div class="card-actions justify-start">
-                      <button class="btn btn-error text-white">Register Now!</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </label>
+              <button class="btn btn-error w-full text-white font-bold">Send Message</button>
             </div>
-        </section>
-        <!-- Program Sections end -->
-
-        <!-- Product Section  -->
-        <section class="mt-10 lg:mt-20 mb-10">
-          <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
-            <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Our New Products</h1>
-            <p class="text-[#13131899] lg:px-60">Our club are proud to wear Purple, and bar a wartime shortage of purple fabric, have done so for over 100 years! Our club kit is made by Adidas.</p>
-          </div>
-          <div>
-
-          </div>
-        </section>
-        <!-- Product Section End -->
-        <!-- FAQ Section  -->
-        <section class="mt-10 lg:mt-20 mb-10">
-          <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
-            <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Clients Question</h1>
-            <p class="text-[#13131899] lg:px-60">Any questions? We've got it covered! Please see our frequently asked questions below.</p>
-          </div>
-          <div class="lg:flex lg:gap-8 p-8 border border-[#1313181a] rounded-2xl">
-            <div class="w-full">
-              <img src="images/11.png" alt="">
-            </div>
-            <div>
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  Is this club just for elite players?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>No! Players of all ages, abilities and experience are welcome here. Whether you’re a beginner, a social player or an aspiring international, there is a team for you at the club (and a warm off-pitch welcome for social members and Colts parents!). We have 20 adult teams and 50 junior teams – there is something for everyone and we’d love to see you at the club.</p>
-                </div>
-              </div>
-              <hr class="lg:mx-8">
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  I've never played hockey before. Is it possible to try out before I decide whether to join?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>Absolutely. Our Back 2 Hockey programme is the perfect way to give hockey a try before you decide whether you’d like to join a senior team. Find out more information here or email us for more details.</p>
-                </div>
-              </div>
-              <hr class="lg:mx-8">
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  Do you Provide Goalkeeper coaching?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>Goalkeepers have access to specialist GK sessions during the season.</p>
-                </div>
-              </div>
-              <hr class="lg:mx-8">
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  When are trials?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>The club’s annual Play Day is held in early September every year. This is the best way to meet people and find the team that suits you best. Keep an eye out for details on the club website and social media feeds.</p>
-                </div>
-              </div>
-              <hr class="lg:mx-8">
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  Who are the coaches?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>We have a huge team of experienced and inspirational coaches at Surbiton HC, including qualified coaches and current international players.</p>
-                </div>
-              </div>
-              <hr class="lg:mx-8">
-              <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold lg:px-8">
-                  When is the hockey season?
-                </div>
-                <div class="collapse-content lg:px-8"> 
-                  <p>The senior hockey season runs from September through until March/April. For adult players, there is also various informal summer hockey available during the off season, including a 7-aside summer league.</p>
-
-                  <p>
-                    The junior season runs from September until March, with some breaks during school holidays. We also provide a Summer Programme for juniors (which is open to non-members).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- FAQ Section End -->
-
-        <!-- get in touch section  -->
-        <section class="mt-10 lg:mt-20 mb-10">
-          <div class="border-dashed border-y-2 py-14 border-[#13131833] p-4 text-center mb-11">
-            <h1 class="font-extrabold text-xl lg:text-4xl text-[#131318] mb-4">Get In Touch</h1>
-            <p class="text-[#13131899] lg:px-60">Being a member at Hockey Club BD is about more than just chasing a hockey ball around on a Saturday afternoon. Join us and whether you’re a future Olympian, a competitive club player or more interested in a social post-game beer, we guarantee you’ll have a great time both on and off the pitch..</p>
-          </div>
-          <div class="lg:flex gap-6">
-            <div class="w-full max-w-lg p-8 border border-[#1313181a] rounded-2xl">
-              <div class="card w-full bg-[#bced6d1a] text-primary-content">
-                <div class="card-body">
-                  <img class="w-12 mb-6" src="images/Group Call.png" alt="">
-                  <p class="text-[#13131866]">Phone Number : </p>
-                  <h2 class="card-title text-[#131318]">(+62) 123-321-543</h2>
-                </div>
-              </div>
-              <div class="card w-full my-6 bg-[#fddd5f1a] text-primary-content">
-                <div class="card-body">
-                  <img class="w-12 mb-6" src="images/Group Msg.png" alt="">
-                  <p class="text-[#13131866]">Email : </p>
-                  <h2 class="card-title text-[#131318]">hockeys@support.com</h2>
-                </div>
-              </div>
-              <div class="card w-full bg-[#629cf31a] text-primary-content">
-                <div class="card-body">
-                  <img class="w-12 mb-6" src="images/Group Map.png" alt="">
-                  <p class="text-[#13131866]">Location : </p>
-                  <h2 class="card-title text-[#131318]">152/1 Mohakhali Wireless Gate</h2>
-                </div>
-              </div>
-            </div>
-            <div class="w-full">
-              <form action="">
-                <div class="lg:flex gap-7">
-                  <label class="form-control w-full">
-                    <div class="label">
-                      <span class="label-text font-bold text-xl">Your Name</span>
-                    </div>
-                    <input type="text" placeholder="Enter your full name" class="input input-bordered w-full bg-[#13131808]" />
-                    <div class="label">
-                    </div>
-                  </label>
-                  <label class="form-control w-full">
-                    <div class="label">
-                      <span class="label-text font-bold text-xl">Your Email</span>
-                    </div>
-                    <input type="email" placeholder="Enter your email" class="input input-bordered w-full bg-[#13131808]" />
-                    <div class="label">
-                    </div>
-                  </label>
-                </div>
-                <div class="lg:flex gap-7">
-                  <label class="form-control w-full">
-                    <div class="label">
-                      <span class="label-text font-bold text-xl">Subject</span>
-                    </div>
-                    <input type="text" placeholder="Enter your subject" class="input input-bordered w-full bg-[#13131808]" />
-                    <div class="label">
-                    </div>
-                  </label>
-                  <label class="form-control w-full">
-                    <div class="label">
-                      <span class="label-text font-bold text-xl">Phone Number</span>
-                    </div>
-                    <input type="tel" placeholder="Enter your phone number" class="input input-bordered w-full bg-[#13131808]" />
-                    <div class="label">
-                    </div>
-                  </label>
-                </div>
-                <div>
-                  <label class="form-control w-full">
-                    <div class="label">
-                      <span class="label-text font-bold text-xl">Message</span>
-                    </div>
-                    <textarea class="textarea textarea-bordered h-48 lg:h-96 w-full bg-[#13131808]" placeholder="Write your message"></textarea>
-                    <div class="label">
-                    </div>
-                  </label>
-                  <button class="btn btn-error w-full text-white font-bold">Send Message</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="my-8 p-8 bg-[#13131808] rounded-xl">
-            <div class="label">
-              <span class="mx-auto my-6 label-text font-bold text-2xl">Social Media</span>
-            </div>
-            <div class="text-center ">
-              <a class="text-2xl m-2" href=""><i class="fa-brands fa-twitter"></i></a>
-              <a class="text-2xl m-2" href=""><i class="fa-brands fa-facebook"></i></a>
-              <a class="text-2xl m-2" href=""><i class="fa-brands fa-instagram"></i></a>
-              <a class="text-2xl m-2" href=""><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-        </section>
-        <!-- get in touch section end -->
-      </main>
-    <footer>
-      <footer class="footer py-20 justify-center bg-[#131318] text-white">
-        <aside class="sm:w-11/12 lg:w-1/3">
-          <h3 class="text-2xl">Get In Touch</h3>
-          <p class="my-2">With ten men’s teams, six ladies teams, a mixed side, a range of youth teams, various touring sides and Back to Hockey sessions, Woking Hockey Club offers hockey to players of any ability.</p>
-          <p><i class="fa-solid fa-envelope text-[#FF4240] mr-2"></i> hockeys@support.com</p>
-          <p><i class="fa-solid fa-phone text-[#FF4240] mr-2"></i> (+62) 123-321-543</p>
-        </aside> 
-        <nav class="mx-auto lg:-ml-96">
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Leadership</a>
-          <a class="link link-hover">Careers</a>
-          <a class="link link-hover">News & Article</a>
-          <a class="link link-hover">Legal Notice</a>
-        </nav> 
-        <nav class="mx-auto lg:-ml-40">
-          <header class="footer-title">support</header> 
-          <a class="link link-hover">Help Center</a>
-          <a class="link link-hover">FAQ</a>
-          <a class="link link-hover">Ticket Support</a>
-          <a class="link link-hover">Contact Us</a>
-        </nav> 
-        <nav class="mx-auto lg:ml-20">
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Academy </a>
-          <a class="link link-hover">Group Lesson</a>
-          <a class="link link-hover">Private Lesson</a>
-          <a class="link link-hover">Hockeys for kids</a>
-          <a class="link link-hover">Hockeys for Adult</a>
-        </nav>
-      </footer>
-    </footer>
+          </form>
+        </div>
+      </div>
+      <div class="my-8 p-8 bg-[#13131808] rounded-xl">
+        <div class="label">
+          <span class="mx-auto my-6 label-text font-bold text-2xl">Social Media</span>
+        </div>
+        <div class="text-center ">
+          <a class="text-2xl m-2" href=""><i class="fa-brands fa-twitter"></i></a>
+          <a class="text-2xl m-2" href=""><i class="fa-brands fa-facebook"></i></a>
+          <a class="text-2xl m-2" href=""><i class="fa-brands fa-instagram"></i></a>
+          <a class="text-2xl m-2" href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- get in touch section end -->
+  </main>
+  <footer class="footer py-20 justify-center bg-[#131318] text-white">
+    <aside class="sm:w-11/12 lg:w-1/3">
+      <h3 class="text-2xl">Get In Touch</h3>
+      <p class="my-2">With ten men’s teams, six ladies teams, a mixed side, a range of youth teams, various touring
+        sides and Back to Hockey sessions, Woking Hockey Club offers hockey to players of any ability.</p>
+      <p><i class="fa-solid fa-envelope text-[#FF4240] mr-2"></i> hockeys@support.com</p>
+      <p><i class="fa-solid fa-phone text-[#FF4240] mr-2"></i> (+62) 123-321-543</p>
+    </aside>
+    <nav class="mx-auto lg:-ml-96">
+      <header class="footer-title">Company</header>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Article</a>
+      <a class="link link-hover">Legal Notice</a>
+    </nav>
+    <nav class="mx-auto lg:-ml-40">
+      <header class="footer-title">support</header>
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <nav class="mx-auto lg:ml-20">
+      <header class="footer-title">Services</header>
+      <a class="link link-hover">Academy </a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover">Hockeys for kids</a>
+      <a class="link link-hover">Hockeys for Adult</a>
+    </nav>
+  </footer>
 </body>
+
 </html>
